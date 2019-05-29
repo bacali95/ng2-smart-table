@@ -12,11 +12,14 @@ import { Grid } from '../../../lib/grid';
          *ngIf="!action.renderComponent"
          [innerHTML]="action.title"
          (click)="onCustom(action, $event)"></a>
-      <ng2-st-tbody-custom-item class="ng2-smart-action ng2-smart-action-custom-custom"
-                                *ngIf="action.renderComponent"
-                                [action]="action"
-                                [row]="row"
-                                (click)="onCustom(action, $event)"></ng2-st-tbody-custom-item>
+      <a href="#" class="ng2-smart-action ng2-smart-action-custom-custom"
+         *ngIf="action.renderComponent"
+         (click)="onCustom(action, $event)">
+        <ng2-st-tbody-custom-item class="ng2-smart-action ng2-smart-action-custom-custom"
+                                  [action]="action"
+                                  [row]="row"></ng2-st-tbody-custom-item>
+      </a>
+
     </ng-container>
   `,
 })

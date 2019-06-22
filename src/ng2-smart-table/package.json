@@ -1,6 +1,6 @@
 {
   "name": "@bacali/ng2-smart-table",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "description": "Angular Smart Table",
   "main": "./bundles/table.umd.js",
   "module": "./index.js",
